@@ -1,0 +1,48 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --search-bar: #bbb;
+  --search-focus-bar: #3a71ca;
+}
+
+.container {
+  padding: 1em;
+  width: 80%;
+  margin: auto;
+}
+
+.hide {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.search-bar {
+  width: 35%;
+  line-height: 1.5;
+  padding: 0 7px;
+  transition: width 0.3s ease-in-out;
+  border: solid 1px var(--search-bar);
+  border-radius: 5px;
+
+  &::placeholder {
+    font-weight: 200
+  }
+}
+
+.search-bar:focus {
+  width: 100%;
+  outline: solid 2px var(--search-focus-bar);
+
+  &::placeholder {
+    color: transparent;
+  }
+}
