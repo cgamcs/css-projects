@@ -1,0 +1,21 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.rings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+}
+
+.ring {
+  border-radius: 50%;
+  display: flex;
+}
+
+.ring-1 { background-color: #282828; height: 400px; width: 400px; }
+.ring-2 { background-color: #2892f9; height: 300px; width: 300px; margin: 50px; }
+.ring-3 { background-color: #fb2f27; height: 200px; width: 200px; margin: 50px; }
+.bullseye { background-color: #fdfe29; height: 100px; width: 100px; margin: 50px; }
